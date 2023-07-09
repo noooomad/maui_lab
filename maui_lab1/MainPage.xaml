@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui_lab1.MainPage"
+             BackgroundColor="#000080">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="300,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="iuriih.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Start" />
+
+            <Label
+                Text="Was up was up"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="53"
+                HorizontalOptions="Center"
+                TextColor="#808000"/>
+
+         
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                HeightRequest="57"
+                WidthRequest="150"
+                TextColor="#808000"
+                BorderColor="#FF0000"
+                BorderWidth="3"/>
+            <DatePicker 
+                Date="07/09/2023"
+                HorizontalOptions="End"
+                FontSize="Body"
+                />
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
